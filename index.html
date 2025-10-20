@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Web Viewer</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: canvas;   /* system default background */
+    color: canvastext;          /* system default text color */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  /* Ensure embedded HTML fits full width */
+  body > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+
+<script>
+(function() {
+    const hash = location.hash;
+    if (hash.startsWith('#/')) {
+        const decodedHTML = decodeURIComponent(hash.slice(2));
+        document.open();
+        document.write(decodedHTML);
+        document.close();
+    } else {
+        document.body.innerHTML = "<h2 style='text-align:center;margin-top:20px;'>No HTML found in URL</h2>";
+    }
+})();
+</script>
+
+</body>
+</html>
