@@ -52,11 +52,11 @@ Open this link to see the content in full-screen mode.
 
 ## Support
 
-* For help, contact the project creator via [GitHub](https://github.com/appmakerharresh).
+* For help, contact the project creator via [GitHub](https://docs.google.com/forms/d/e/1FAIpQLScBxSyzxQAMqO459zvx2dcpU1T30VUWOJJGHe9ezgqCK-6gzQ/viewform?usp=sharing&ouid=112498087502744057664).
 * All features are free to use in any browser.
 
 ---
 
 ## License
 
-This project is open-source under the **MIT License**.
+This project is open-source under the ** GNU GENERAL PUBLIC LICENSE**.
